@@ -20,8 +20,8 @@ def report(text):
     if (key.isalpha()) & (key != ' '):
       chars[key] += 1
   sorted_report = sorted(chars.items())
-  for i in sorted_report:
-    print("The '" + sorted_report[i][0] + "' character was found " + sorted_report[i][1] + " times")
+  for key, value in sorted_report:
+    print(f"The '{key}' character was found {value} times")
     
 
 def main():
